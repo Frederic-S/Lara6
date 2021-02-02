@@ -16,5 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas', function () {
-    return view('pizzas');
+    $pizza = ['type' => 'hawaiian', 'base' => 'cheesy crest', 'price' => 16];
+    return view('pizzas', $pizza );
 });
