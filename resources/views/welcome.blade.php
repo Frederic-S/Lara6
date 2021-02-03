@@ -1,6 +1,4 @@
-@extends('layouts.layout')
-
-@section('content')
+@extends('layouts.layout') @section('content')
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
     <div class="top-right links">
@@ -11,16 +9,13 @@
 
         @if (Route::has('register'))
         <a href="{{ route('register') }}">Register</a>
-        @endif
-        @endauth
+        @endif @endauth
     </div>
     @endif
 
     <div class="content">
-        <img src="img/pizza-house.png" alt="pizza house logo">
-        <div class="title">
-            The Best pizzas
-        </div>
+        <img src="img/pizza-house.png" alt="pizza house logo" />
+        <div class="title">The Best pizzas</div>
     </div>
 </div>
 @endsection
